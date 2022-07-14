@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Галерея</title>
+	<script src="https://unpkg.com/vue@next"></script>
+	<style type="text/css">img {height: 200px; width: 200px; border-radius: 5%; padding: 10px 0;}</style>
+</head>
+<body>
+	<section id="app">
+		<add-image @add-image="add"></add-image>
+		<delete-image v-for="img in images" :info="img" @delete-card="del"></delete-image>
+	</section>
+<script type="text/javascript" src="js/task4.js"></script>
+</body>
+</html>

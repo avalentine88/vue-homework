@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue@next"></script>
+	<link rel="stylesheet" type="text/css" href="css/task3.2.css">
+
+</head>
+<body>
+<section id="app">
+	<strong>Список и стоимость процедур:</strong>	
+	<div v-for="service in services">
+		{{ service.title + ":" }}
+		{{ service.price + " " + "р."}}
+		<input type="checkbox" name="choice[]" @change="addGoods" :value="service" v-model="userData.choice">
+	</div>
+	<strong>Итого: {{ userData.sum }} р. </strong>
+		
+
+
+</section>
+<script src="js/task3.2.js" type="text/javascript"></script>	
+</body>
+</html>

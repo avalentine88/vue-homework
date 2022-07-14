@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="https://unpkg.com/vue@next"></script>
+</head>
+<body>
+<div id="app">
+	<input type="text" placeholder="Начните вводить название" v-model.trim="userSearch">
+	<div v-for="article in matchLetters">{{ article.title }}</div>
+		
+
+</div>
+
+<script src="js/task3.1.js" type="text/javascript"></script>	
+</body>
+</html>

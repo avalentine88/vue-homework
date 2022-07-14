@@ -1,0 +1,24 @@
+* {
+	font-family: Comic Sans MS;
+	background-color: #D7CCC8;
+	padding: 10px 50px;
+	
+	
+}
+
+strong {
+	text-transform: uppercase;
+	display: block;
+	background-color: #A1887F;
+}
+
+section {
+	
+	text-align: center;
+	padding: 0 100px;
+	
+}
+
+div {
+	background-color: #BCAAA4;
+}
