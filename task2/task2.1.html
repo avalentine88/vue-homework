@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Goods</title>
+	<script src="https://unpkg.com/vue@next"></script>
+	<link rel="stylesheet" type="text/css" href="css/task2.1.css">
+</head>
+<body>
+<div id="vueApp">
+	
+	<section>
+		<div :class="{ zero: good.count === 0, 
+		notMany: good.count >= 1 && good.count < 20, 
+		many: good.count >=20 }" 
+		v-for="good in goods">
+		<span>{{ good.title }}</span>
+		<span>{{ good.price  }}</span>
+	
+	</div>
+	</section>
+
+</div>
+
+
+<script src="js/task2.1.js"></script>
+</body>
+</html>

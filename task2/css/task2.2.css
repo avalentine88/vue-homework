@@ -1,0 +1,24 @@
+.gridView {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	
+
+}
+.listView{
+	display:  flex;
+	flex-direction: column;
+	
+}
+
+.gridView img {
+	height: 100px;
+	width: 100px;
+}
+
+.listView img {
+	height: 100px;
+	width: 100px;
+	border: 1px solid transparent;
+	border-radius: 50%;
+}
